@@ -1,7 +1,5 @@
 #pragma once
 
-#include <libmsp432p401r/platform/msp432p401r.h>
-
 #include <cstdint>
 #include <libcore/peripherals/system_controller.hpp>
 #include <libcore/utility/build_info.hpp>
@@ -9,6 +7,7 @@
 #include <libcore/utility/error_handling.hpp>
 #include <libcore/utility/log.hpp>
 #include <libcore/utility/math/bit.hpp>
+#include <libmsp432p401r/platform/msp432p401r.hpp>
 
 namespace sjsu
 {
@@ -331,8 +330,7 @@ class SystemController final : public sjsu::SystemController
 
   /// @param clock_configuration The desired clock configurations for the
   ///                            system.
-  explicit constexpr SystemController(
-      ClockConfiguration & clock_configuration)
+  explicit constexpr SystemController(ClockConfiguration & clock_configuration)
       : clock_configuration_(clock_configuration)
   {
   }

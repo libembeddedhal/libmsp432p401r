@@ -1,12 +1,11 @@
 #pragma once
 
-#include <libmsp432p401r/platform/msp432p401r.h>
-
 #include <libarmcortex/peripherals/interrupt.hpp>
 #include <libarmcortex/peripherals/system_timer.hpp>
 #include <libcore/platform/syscall.hpp>
 #include <libcore/utility/time/time.hpp>
 #include <libmsp432p401r/peripherals/system_controller.hpp>
+#include <libmsp432p401r/platform/msp432p401r.hpp>
 
 namespace sjsu::msp432p401r
 {

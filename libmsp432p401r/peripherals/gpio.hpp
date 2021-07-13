@@ -1,12 +1,11 @@
 #pragma once
 
-#include <libmsp432p401r/platform/msp432p401r.h>
-
 #include <cstdint>
 #include <libcore/peripherals/gpio.hpp>
 #include <libcore/peripherals/interrupt.hpp>
 #include <libcore/utility/error_handling.hpp>
 #include <libcore/utility/math/bit.hpp>
+#include <libmsp432p401r/platform/msp432p401r.hpp>
 
 namespace sjsu::msp432p401r
 {
